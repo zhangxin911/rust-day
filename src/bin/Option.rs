@@ -27,6 +27,32 @@ fn find_quantity(name: &str) -> Option<i32> {
     None
 }
 
+enum Access {
+    Admin,
+    User,
+    Guest,
+}
+
+fn maybe_access(name: &str) -> Option<Access> {
+    match name {
+        "admin" => Some(Access::Admin),
+        "gary" => Some(Access::User),
+        _ => None,
+    }
+}
+
+fn root() -> Option<Access> {
+    Some(Access::Admin)
+}
+
+fn part_1() -> bool {
+    maybe_access("admin").is_some()
+}
+
+fn part_2() -> Option<Access> {
+    maybe_access("root")
+}
+
 fn main() {
     let mark = Customer {
         age: Some(22),
@@ -43,4 +69,7 @@ fn main() {
     }
 
     let a = Some(1);
+    let a_is_some = a.is_some();
+    let a_is_none = a.is_none();
+    let a_mapped = a.map(|num| num + 1);
 }

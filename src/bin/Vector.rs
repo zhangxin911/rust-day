@@ -7,4 +7,10 @@ fn main() {
         }
     }
     println!("number of elements = {:?}", nums.len());
+
+    let data: Vec<_> = vec![1, 2, 3, 4, 5]
+        .iter()
+        .map(|value| value * 3)
+        .filter(|value| value > &10)
+        .collect();
 }
