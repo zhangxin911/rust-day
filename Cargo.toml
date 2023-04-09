@@ -10,5 +10,5 @@ name="activity"
 path="src/lib/activitylib.rs"
 
 [dependencies]
-crossbeam = "0.8.2"
+colored = "2.0.0"
 crossbeam-channel = "0.5.7"
