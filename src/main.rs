@@ -172,19 +172,6 @@
 
 //  boolean, integer, double&float, character, string
 
-fn add(a: i32, b: i32) -> i32 {
-    a + b;
-}
-
 fn main() {
-    let two = 2;
-    let hello = "hello";
-    let j = 'j';
-    let my_half = 0.5;
-    let mut my_name = "Bill";
-    let quit_program = false;
-    let your_half = my_half;
-    let x = add(1, 1);
-    let y = add(3, 0);
-    let z = add(x, 1);
+    
 }
